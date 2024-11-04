@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Selection - Digital Library</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FF6F61;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #FFF;
+            margin-bottom: 30px;
+        }
+        
+        .book-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        
+        .book {
+            background-color: #FFF;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .book:hover {
+            transform: translateY(-5px);
+        }
+        
+        .book img {
+            max-width: 30%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .book h2 {
+            color: #FF6F61;
+            margin-bottom: 10px;
+        }
+        
+        .home-btn {
+            display: block;
+            margin-top: 30px;
+            background-color: #FF6F61;
+            color: #FFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .home-btn:hover {
+            background-color: #FF5733;
+        }
+
+        .action-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .back-btn {
+            background-color: #1b110f;
+        }
+
+        .audio-btn {
+            background-color: #1c1a0d;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Book</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a book...">
+            <button>Search</button>
+        </div>
+        <div class="book-list">
+            <div class="book">
+                <img src="https://harichetan.com/wp-content/uploads/2022/04/download-90295591648813101-625x1000.png" alt="Book 1">
+                <h2>Book 1</h2>
+                <p>Description of Book 1</p>
+                <a href="https://drive.google.com/file/d/0Bz4XojZRBdB9bF80UnNCdzY1dGM/view?resourcekey=0-WXrJqndslSDroI__CT9mEQ">Read</a>
+            </div>
+            <div class="book">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663805647i/136251.jpg" alt="Book 2">
+                <h2>Book 2</h2>
+                <p>Description of Book 2</p>
+                <a href="https://www.pdffilestore.com/wp-content/uploads/2021/01/Harry-Potter-and-the-Sorcerers-Stone-1997.pdf">Read</a>
+            </div>
+            <!-- Add more book entries as needed -->
+        </div>
+        <div class="action-buttons">
+            <a href="file:///C:/Users/risha/Desktop/Css/login2.html" class="home-btn back-btn">Back</a>
+            <a href="file:///C:/Users/risha/Desktop/Css/selectbook4.html" class="home-btn audio-btn">Go for Audio Book</a>
+        </div>
+    </div>
+</body>

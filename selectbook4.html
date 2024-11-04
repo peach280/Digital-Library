@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Audio Book - Digital Library</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: url('https://img.freepik.com/free-photo/book-headphones-arrangement_23-2149765792.jpg?w=1800&t=st=1710680751~exp=1710681351~hmac=735c660fdd3edd7e02f1f7c97435e6ad2406e8b8cacb19e2ad166b962e72c95e');
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .audiobook-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            justify-items: center;
+            align-items: center;
+        }
+        
+        .audiobook {
+            background-color: #FFF;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .audiobook:hover {
+            transform: translateY(-5px);
+        }
+        
+        .audiobook img {
+            max-width: 50%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .audiobook h2 {
+            max-width:50% ;
+            color: #2d2b1d;
+            margin-bottom: 10px;
+        }
+        
+        .audiobook p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .navigation {
+            margin-top: 30px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF5733;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            background-color: #1f1210;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Audio Book</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a book...">
+            <button>Search</button>
+        </div>
+        <div class="audiobook-list">
+            <div class="Hindi audiobook">
+                <img src="https://c8.alamy.com/comp/2D9KGAH/bhagavad-gita-book-isolated-on-white-background-with-selective-focus-2D9KGAH.jpg" alt="Audio Book 1">
+                <h2>Audio Book 1</h2>
+                <p>Description of Audio Book 1</p>
+                <a href="https://bhagavadgitaclass.com/wp-content/audio/01/01/BG_01_01-03_-_Bhakti_Vikas_Swami.mp3">Listen</a>
+            </div>
+            <div class="audiobook">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/81aCMT1zKtL._AC_UL400_SR400,400_.jpg" alt="Audio Book 2">
+                <h2>Audio Book 2</h2>
+                <p>Description of Audio Book 2</p>
+                <a href="https://soundcloud.com/penguin-audio/harry-potter-1-7-audio">Listen</a>
+            </div>
+            <!-- Add more audiobook entries as needed -->
+        </div>
+        <div class="navigation">
+            <a href="file:///C:/Users/risha/Desktop/Css/bookselect3.html">Back</a>
+            <a href="file:///C:/Users/risha/Desktop/Css/feedback.html">Next</a>
+        </div>
+    </div>
+</body>
+</html>
